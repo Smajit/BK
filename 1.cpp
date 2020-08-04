@@ -1,4 +1,4 @@
-int isPallindrome(char str[])
+boolean isPallindrome(char str[])
 {
   int i = 0;
   int j = strlen(str) - 1;
@@ -6,8 +6,8 @@ int isPallindrome(char str[])
   while(j>i)
   {
     if(str[i++] != str[j--])
-      return 0;
+      return False;
    
   }
-  
+  return True;
 }
